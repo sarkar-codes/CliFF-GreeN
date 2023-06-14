@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cliff-Green | The Dream Destination</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="contact" type="text" href="contact.html">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">CliFF GreeN</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br/>Adventure</h2>
+        <img src="images/bird1.png" id="bird1"/>
+        <img src="images/bird2.png" id="bird2"/> 
+        <img src="images/forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+        <img src="images/rocks.png" id="rocks">
+        <img src="images/water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>"Nature's serenity, where cliffs embrace the emerald green, a tranquil haven for hearts to unwind."</h2>
+        <p>
+            The beauty of hills is a testament to the wonders of nature. Rising gracefully from the earth, these
+            majestic formations captivate the imagination and inspire awe. Their undulating slopes, cloaked in a 
+            tapestry of vibrant hues, create a mesmerizing panorama that changes with the seasons. Whether blanketed
+            in the soft embrace of spring blossoms, ablaze with the fiery colors of autumn, or crowned with a dusting
+            of pristine snow, hills offer a visual symphony that stirs the soul. As the gentle breezes whisper through
+            the trees and the sunlight dances upon the verdant slopes, one can't help but be humbled by the sheer
+            magnificence of these natural wonders.<br><br>But the allure of hills extends beyond their visual appeal. 
+            They possess a profound tranquility that envelops all who venture into their embrace. Walking along their trails, 
+            a sense of peace washes over the weary traveler, as if the hills themselves offer respite from the noise and chaos
+            of the world below. The air is crisp and fragrant, infused with the scents of wildflowers and earth, rejuvenating 
+            the spirit with each breath. The symphony of nature's melodies fills the ears, from the gentle rustling of leaves 
+            to the distant calls of birds. It is in these quiet moments, amidst the serenity of the hills, 
+            that one can find solace and a deep connection to the natural world.<br><br>Beyond their visual and sensory 
+            splendor, hills also hold a profound significance in human culture and history. They have been revered as sacred
+            sites, serving as gathering places for spiritual rituals and contemplation. Throughout the ages, civilizations
+            have sought refuge and built settlements on their slopes, harnessing their resources and drawing inspiration
+            from their lofty vantage points. Hills bear the imprint of human stories, with ancient ruins, terraced fields,
+            and quaint villages dotting their landscapes. They are a testament to the resilience and ingenuity of humanity,
+            standing as silent witnesses to the ebb and flow of time. In their presence, one can't help but feel a deep connection
+            to the past and a sense of the enduring power of nature and human spirit.<br><br>Darjeeling, nestled in the foothills
+            of the Eastern Himalayas, is renowned for its breathtaking natural beauty, serene atmosphere, and panoramic views of
+            snow-capped mountains.Darjeeling earned its title as the Queen of Hills due to its majestic charm and picturesque landscapes. 
+            The town is situated at an elevation of around 2,050 meters (6,710 feet) and offers a pleasant and temperate climate throughout
+            the year. Its cool climate, tea gardens, and colonial architecture have made it a popular tourist destination and a retreat for
+            people seeking respite from the scorching summer heat in the plains.<br><br>One of the most prominent features of Darjeeling is 
+            its sprawling tea estates that stretch across the hillsides. These tea gardens not only add to the scenic beauty but also produce 
+            some of the finest tea in the world. The rolling slopes covered with lush green tea bushes provide a mesmerizing sight and offer 
+            opportunities for tourists to explore and learn about tea cultivation.</p>
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
